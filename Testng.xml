@@ -1,0 +1,13 @@
+<suite name="Suite1" verbose="1" >
+    <test name="test1" >
+        <groups>
+            <run>
+                <include name = "Test1"/>
+            </run>
+        </groups>
+        <classes >
+            <class name="com.sft.PageObjectModel.SignUpFormTest" />
+        </classes>
+    </test>
+
+</suite>

@@ -1,0 +1,19 @@
+# Created by .ignore support plugin (hsz.mobi)
+# Created by .ignore support plugin (hsz.mobi)
+*.class
+
+#maven
+target
+
+#mac
+.DS_Store
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+#idea
+.idea/workspace.xml
+.idea/*.xml
+*.iml
