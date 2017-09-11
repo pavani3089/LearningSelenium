@@ -61,6 +61,8 @@ public class TestSignIn {
 
         WebElement submit = driver.findElement(By.name("websubmit"));
         submit.click();
+        
+        System.out.println("change");
 
         try {
             Thread.sleep(5000);
