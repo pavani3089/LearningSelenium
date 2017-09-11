@@ -22,7 +22,7 @@ public class TestRetailMeNot {
     private WebDriver driver;
     @BeforeMethod
     public void setUp(){
-        System.setProperty("webdriver.chrome.driver", "/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "./chromedriver");
         driver = new ChromeDriver();
         driver.get("https://www.retailmenot.com/ideas/hot-products");
 

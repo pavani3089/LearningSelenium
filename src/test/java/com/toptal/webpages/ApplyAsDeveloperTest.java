@@ -19,7 +19,7 @@ public class ApplyAsDeveloperTest {
 
     @BeforeTest
     public void setUp() {
-        System.setProperty("webdriver.chrome.driver", "/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "./chromedriver");
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.manage().window().maximize();
