@@ -32,7 +32,7 @@ public class SignUpFormTest {
     public Object[][] pullDataFromExcel() throws IOException {
 
         ReadGuru99ExcelFile r=new ReadGuru99ExcelFile();
-        String filePath = "/Users/pavani/documents";
+        String filePath = "/";
         Object[][] x=r.readExcel(filePath,"xyz.xlsx","pavani");
         for(Object s[]:x)
         {

@@ -18,7 +18,7 @@ public class TestSignIn {
     @BeforeTest
     public void setup() {
 
-        System.setProperty("webdriver.chrome.driver", "/Users/pavani/Downloads/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "/chromedriver");
         driver = new ChromeDriver();
         driver.get("https://www.facebook.com");
         try {
@@ -61,7 +61,7 @@ public class TestSignIn {
 
         WebElement submit = driver.findElement(By.name("websubmit"));
         submit.click();
-        
+
         System.out.println("change");
 
         try {
