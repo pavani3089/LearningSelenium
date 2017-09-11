@@ -23,7 +23,7 @@ public class SignUpFormTest {
 
     @BeforeMethod
     public static void setUp(){
-        System.setProperty("webdriver.chrome.driver", "/Users/pavani/Downloads/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "./chromedriver");
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
@@ -32,7 +32,7 @@ public class SignUpFormTest {
     public Object[][] pullDataFromExcel() throws IOException {
 
         ReadGuru99ExcelFile r=new ReadGuru99ExcelFile();
-        String filePath = "/";
+        String filePath = "./";
         Object[][] x=r.readExcel(filePath,"xyz.xlsx","pavani");
         for(Object s[]:x)
         {
