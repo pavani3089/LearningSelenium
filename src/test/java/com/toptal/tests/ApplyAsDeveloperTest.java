@@ -1,5 +1,12 @@
-package com.toptal.webpages;
+package com.toptal.tests;
 
+/**
+ * Created by pavani on 9/14/17.
+ */
+import com.toptal.webpages.DevelopersApplyPage;
+import com.toptal.webpages.DevelopersPage;
+import com.toptal.webpages.DevelopersPortalPage;
+import com.toptal.webpages.HomePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
@@ -30,8 +37,8 @@ public class ApplyAsDeveloperTest {
     public Object[][] data()
     {
         Object[][] x ={{"abcd@gmai.com","Pa","Pa","x","xy"},
-                       {"abcd@gmai.com","Pa","Pa","x","xy"}
-                      };
+                {"abcd@gmai.com","Pa","Pa","x","xy"}
+        };
 
         return x;
     }
