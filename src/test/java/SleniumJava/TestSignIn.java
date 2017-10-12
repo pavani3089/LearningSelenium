@@ -18,7 +18,7 @@ public class TestSignIn {
     @BeforeTest
     public void setup() {
 
-        System.setProperty("webdriver.chrome.driver", "/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "./chromedriver");
         driver = new ChromeDriver();
         driver.get("https://www.facebook.com");
         try {
