@@ -31,18 +31,21 @@ public class TestFbLogin {
 
         WebDriver driver = new ChromeDriver(options);
         driver.get("https://www.facebook.com");
-        Thread.sleep(2000);
+        Thread.sleep(1000);
         WebElement uname = driver.findElement(By.name("email"));
-        uname.sendKeys("*******");
+        uname.sendKeys("abcd@gmail.com");
         WebElement passwrd = driver.findElement(By.name("pass"));
-        passwrd.sendKeys("*****");
-        WebElement login = driver.findElement(By.id("u_0_0"));
+        passwrd.sendKeys("qwert");
+        String s = passwrd.getText();
+        System.out.println("Password displayed is: "+s);
+        Assert.assertEquals(s,"");
+        WebElement login = driver.findElement(By.xpath("//*[@value='Log In']"));
         login.click();
-        Thread.sleep(12000);
+        //Thread.sleep(12000);
         //driver.switchTo().alert().accept();
-        WebElement name = driver.findElement(By.xpath("//div[@id='userNav']//div[@class='linkWrap noCount']"));
-        String x=name.getText();
-        Assert.assertEquals(x,"Pavani Yuvaraju");
+        //WebElement name = driver.findElement(By.xpath("//div[@id='userNav']//div[@class='linkWrap noCount']"));
+        //String x=name.getText();
+        //Assert.assertEquals(x,"Pavani Yuvaraju");
 
     }
 

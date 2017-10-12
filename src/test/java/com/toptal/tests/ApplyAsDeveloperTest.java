@@ -9,6 +9,7 @@ import com.toptal.webpages.DevelopersPortalPage;
 import com.toptal.webpages.HomePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
@@ -27,9 +28,12 @@ public class ApplyAsDeveloperTest {
     @BeforeTest
     public void setUp() {
         System.setProperty("webdriver.chrome.driver", "./chromedriver");
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("start-maximized");
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        driver.manage().window().maximize();
+
+        //driver.manage().window().maximize();
     }
 
     @DataProvider(name = "test1")

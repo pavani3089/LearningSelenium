@@ -18,6 +18,6 @@ public class MinMaxTests {
         Assert.assertTrue(MinMax.minmax(x,89,-1),"Failed to find min max");
 
 
-        Assert.assertFalse(MinMax.minmax(x,89,-1),"Failed to find min max");
+        //Assert.assertFalse(MinMax.minmax(x,89,-1),"Failed to find min max");
     }
 }
